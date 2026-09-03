@@ -452,17 +452,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
 
 
 export const initialFeedbackList: ViewerFeedbackItem[] = [
-  {
-    id: 'fb-1',
-    name: 'Dr. Elena Rostova',
-    location: 'Cambridge, MA',
-    date: 'February 26, 2026',
-    category: 'Deep Sky',
-    targetPhoto: 'The Great Orion Nebula (M42)',
-    rating: 5,
-    message: 'The dynamic range preservation on M42 is masterclass work. Retaining Trapezium resolve while bringing out the whisper-soft outer OIII billows without blowing out the dust lanes is extraordinarily difficult. Phenomenal integration!',
-    verified: true,
-  },
+  
   {
     id: 'fb-2',
     name: 'Marcus Thorne',
