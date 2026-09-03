@@ -179,7 +179,7 @@ export const birdPhotos: BirdPhoto[] = [
       support: 'Handheld with active optical steady shot',
 
     },
-    fieldNotes: none',
+    fieldNotes: 'none',
     habitat: 'Coastal scrub, chaparral, and coastal sage woodland gardens',
     wingspan: '12 cm',
     tags: ['Raptor', 'Macro Telephoto', 'Iridescence', 'High Shutter', 'California'],
