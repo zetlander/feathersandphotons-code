@@ -39,26 +39,26 @@ function HomePage() {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono-telemetry uppercase tracking-wider bg-slate-900/90 text-amber-300 border border-amber-500/30 shadow-sm">
             <Feather className="w-3.5 h-3.5" />
-            1/4000s Avian Wildlife
+            1/5000s Birds in Flight
           </span>
           <span className="text-slate-600">&bull;</span>
           <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono-telemetry uppercase tracking-wider bg-slate-900/90 text-sky-300 border border-sky-500/30 shadow-sm">
             <Telescope className="w-3.5 h-3.5" />
-            40+ Hr Deep Sky Integrations
+            5+ Hr Deep Sky Integrations
           </span>
         </div>
 
         {/* Hero Title */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
           <h1 className="font-serif-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-100 tracking-tight leading-[1.1]">
-            The Flight of Wings <br />
+            The Joy of Birds in Flight <br />
             <span className="bg-gradient-to-r from-amber-300 via-rose-300 to-sky-300 bg-clip-text text-transparent">
-              &amp; The Depths of Cosmos
+              &amp; The Awe Inspired by Distant Nebulae
             </span>
           </h1>
 
           <p className="text-slate-300 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mx-auto">
-            A photographic archive traversing two dramatic natural scales: freezing the split-second pulse of avian life by day, and unveiling billion-year-old cosmic nebulae by night.
+            A photographic archive spanning contrasting scales: freezing the motion of birds in flight by day, and unveiling diffuse nebulae by night.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -176,7 +176,7 @@ function HomePage() {
                   Cosmos &amp; Deep Time
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
-                  Narrowband astrophotography isolating ionized hydrogen, oxygen, and sulfur emissions across thousands of light-years, captured over dozens of cumulative hours.
+                  Narrowband astrophotography isolating ionized hydrogen, oxygen, and sulfur emissions across thousands of light-years, captured over several hours.
                 </p>
               </div>
 
@@ -351,7 +351,7 @@ function HomePage() {
               "At first glance, avian photography and deep sky astrophotography seem like opposite disciplines. Wildlife photography is instinctual, kinetic, and conducted in fleeting fractions of a second under natural daylight. Astrophotography is meditative, mathematical, and conducted over dozens of cumulative dark hours tracking celestial rotation."
             </p>
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-              "Yet both demand absolute reverence for light and optical precision. Both require patience in the wild—whether waiting in a damp river reed hide at sunrise for a kingfisher plunge, or aligning harmonic mounts beneath a sub-zero Bortle 2 sky. They are two vantage points of the same miracle: the speed of life on Earth, and the eternal stillness of deep space."
+              "Yet both demand absolute reverence for light and optical precision. Both require patience in the wild—whether waiting in a damp river reed hide at sunrise for a kingfisher plunge, or aligning harmonic mounts beneath a Bortle 4.5 sky. They are two vantage points of the same miracle: the speed of life on Earth, and the eternal stillness of deep space."
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 text-left">
