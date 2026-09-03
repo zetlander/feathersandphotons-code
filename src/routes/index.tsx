@@ -51,9 +51,9 @@ function HomePage() {
         {/* Hero Title */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
           <h1 className="font-serif-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-100 tracking-tight leading-[1.1]">
-            The Joy of Birds in Flight <br />
+            Joy of Birds <br />
             <span className="bg-gradient-to-r from-amber-300 via-rose-300 to-sky-300 bg-clip-text text-transparent">
-              &amp; The Awe Inspired by Distant Nebulae
+              &amp; Awe of Nebulae
             </span>
           </h1>
 
