@@ -371,7 +371,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/ngc2237.jpg',
-    thumbUrl: '/photos/ngc2237.jpg'
+    thumbUrl: '/photos/ngc2237.jpg',
     astronomyExif: {
       telescope: telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
       mount: 'Star Adventurer GTi equatorial mount',
@@ -400,7 +400,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/horsehead.jpg',
-    thumbUrl: '/photos/horsehead.jpg'
+    thumbUrl: '/photos/horsehead.jpg',
 
     astronomyExif: {
       telescope: 
