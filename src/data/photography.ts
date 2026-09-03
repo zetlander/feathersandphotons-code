@@ -449,7 +449,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     targetSeason: 'Summer / Autumn',
     tags: ['Cygnus Wall', 'NGC7000', 'North America', 'Narrowband', 'Milky Way', 'Cosmic Cliffs'],
   },
-]
+
 
 export const initialFeedbackList: ViewerFeedbackItem[] = [
   {
