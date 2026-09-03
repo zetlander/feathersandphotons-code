@@ -102,7 +102,7 @@ function HomePage() {
                 <div className="flex items-center justify-between mb-4">
                   <span className="inline-flex items-center gap-2 text-xs font-mono-telemetry uppercase tracking-wider text-amber-300 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30">
                     <Feather className="w-3.5 h-3.5" />
-                    Avian Wildlife Realm
+                    Birds in action
                   </span>
                   <span className="text-xs font-mono-telemetry text-slate-400">
                     8 Curated Specimens
@@ -110,10 +110,10 @@ function HomePage() {
                 </div>
 
                 <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-slate-100 group-hover:text-amber-200 transition-colors">
-                  Feathers &amp; Flight
+                  Bird &amp; Action
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
-                  High-speed telephoto studies capturing micro-details of aerodynamic plumage, predatory focus, and dramatic water strikes at up to 1/5000th of a second.
+                  High-speed telephoto studies capturing microscopic details
                 </p>
               </div>
 
@@ -144,13 +144,13 @@ function HomePage() {
 
               <div className="flex items-center justify-between pt-2">
                 <div className="text-xs font-mono-telemetry text-slate-400">
-                  Gear: Sony α1 &bull; 600mm f/4 GM
+                  Gear: Nikon Z8 &bull; 400mm f/4.5 &bull; 1.4x Tele
                 </div>
                 <Link
                   to="/birds"
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 hover:text-amber-200 group-hover:translate-x-1 transition-all"
                 >
-                  Enter Avian Gallery &rarr;
+                  Enter Bird Gallery &rarr;
                 </Link>
               </div>
             </div>
@@ -173,10 +173,10 @@ function HomePage() {
                 </div>
 
                 <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-slate-100 group-hover:text-sky-200 transition-colors">
-                  Cosmos &amp; Deep Time
+                  Dramatic color &amp; in Deep Space
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
-                  Narrowband astrophotography isolating ionized hydrogen, oxygen, and sulfur emissions across thousands of light-years, captured over several hours.
+                  Narrowband astrophotography isolating ionized H-alpha, OIII, and SII emissions across thousands of light-years, captured over several hours.
                 </p>
               </div>
 
@@ -207,7 +207,7 @@ function HomePage() {
 
               <div className="flex items-center justify-between pt-2">
                 <div className="text-xs font-mono-telemetry text-slate-400">
-                  Rig: Askar FRA600 &bull; ZWO AM5
+                  Rig: Redcat 51 wifd &bull; QHY minicam8 mono
                 </div>
                 <Link
                   to="/deep-sky"
