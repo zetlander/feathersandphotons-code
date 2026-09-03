@@ -26,7 +26,7 @@ export interface BirdPhoto {
   tags: string[]
 }
 
-export interface DeepSkyPhoto {
+export interface DeepSkyImage {
   id: string
   title: string
   catalogId: string
@@ -70,9 +70,9 @@ export interface ViewerFeedbackItem {
 
 export const birdPhotos: BirdPhoto[] = [
   {
-    id: 'kingfisher-azure-dive',
-    title: 'Azure In Motion',
-    species: 'Common Kingfisher',
+    id: 'barn swallow',
+    title: 'Open wide',
+    species: 'barn swallow',
     scientificName: 'Alcedo atthis',
     category: 'waterbirds',
     location: 'River Test, Hampshire, UK',
@@ -80,8 +80,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'portrait',
     featured: true,
     rating: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=85',
-    thumbUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/photos/barn_swallow.jpg',
+    thumbUrl: '/photos/barn_swallow.jpg',
     exif: {
       camera: 'Sony α1',
       lens: 'FE 600mm f/4 GM OSS + 1.4x Teleconverter',
@@ -94,11 +94,11 @@ export const birdPhotos: BirdPhoto[] = [
     fieldNotes: 'Concealed in a low-profile floating hide from 5:30 AM. When this female perched on the overhanging mossy birch branch, early golden morning light pierced through river fog, illuminating the iridescent cyan dorsal plumage before she plunged.',
     habitat: 'Clear, slow-flowing chalk streams with overhanging perches',
     wingspan: '25 cm',
-    tags: ['Kingfisher', 'Chalk Stream', 'High Speed', 'River Wildlife', 'Iridescence'],
+    tags: ['Barn Swallow', 'Chalk Stream', 'High Speed', 'River Wildlife', 'Iridescence'],
   },
   {
-    id: 'barn-owl-twilight-glide',
-    title: 'Ghost of the Hedgerow',
+    id: 'Cormorant',
+    title: 'Blasted!',
     species: 'Western Barn Owl',
     scientificName: 'Tyto alba',
     category: 'raptors',
@@ -107,8 +107,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: true,
     rating: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1600&q=85',
-    thumbUrl: 'https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/photos/Cormorant.jpg',
+    thumbUrl: '/photos/Cormorant.jpg',
     exif: {
       camera: 'Sony α9 III',
       lens: 'FE 400mm f/2.8 GM OSS',
