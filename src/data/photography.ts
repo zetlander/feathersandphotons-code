@@ -223,7 +223,7 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: false,
     rating: 4,
-    imageUrl: imageUrl: '/photos/tern-flying.jpg',
+    imageUrl: '/photos/tern-flying.jpg',
     thumbUrl: '/photos/tern-flying.jpg',
     exif: {
       camera:  'Nikon Z8',
