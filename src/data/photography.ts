@@ -80,8 +80,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'portrait',
     featured: true,
     rating: 5,
-    imageUrl: '/photos/barn_swallow.jpg',
-    thumbUrl: '/photos/barn_swallow.jpg',
+    imageUrl: '/photos/barn-swallow.jpg',
+    thumbUrl: '/photos/barn-swallow.jpg',
     exif: {
       camera: 'Sony α1',
       lens: 'FE 600mm f/4 GM OSS + 1.4x Teleconverter',
@@ -107,8 +107,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: true,
     rating: 5,
-    imageUrl: '/photos/Cormorant.jpg',
-    thumbUrl: '/photos/Cormorant.jpg',
+    imageUrl: '/photos/cormorant.jpg',
+    thumbUrl: '/photos/cormorant.jpg',
     exif: {
       camera: 'Sony α9 III',
       lens: 'FE 400mm f/2.8 GM OSS',
