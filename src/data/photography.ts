@@ -451,8 +451,19 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
   },
 
 
-export const initialFeedbackList: ViewerFeedbackItem[] = [
-  
+
+  export const initialFeedbackList: ViewerFeedbackItem[] = [
+  {
+    id: 'fb-1',
+    name: 'Dr. Elena Rostova',
+    location: 'Cambridge, MA',
+    date: 'February 26, 2026',
+    category: 'Deep Sky',
+    targetPhoto: 'The Great Orion Nebula (M42)',
+    rating: 5,
+    message: 'The dynamic range preservation on M42 is masterclass work. Retaining Trapezium resolve while bringing out the whisper-soft outer OIII billows without blowing out the dust lanes is extraordinarily difficult. Phenomenal integration!',
+    verified: true,
+  },
   {
     id: 'fb-2',
     name: 'Marcus Thorne',
@@ -464,7 +475,17 @@ export const initialFeedbackList: ViewerFeedbackItem[] = [
     message: 'The twilight shot of the Barn Owl over Norfolk reeds captures the elusive mood of British fenlands better than almost anything I have seen. At 1/1600s with an f/2.8 prime in failing light, the feather separation is immaculate.',
     verified: true,
   },
-  
+  {
+    id: 'fb-3',
+    name: 'Clara Lindqvist',
+    location: 'Stockholm, Sweden',
+    date: 'February 04, 2026',
+    category: 'Print Inquiry',
+    targetPhoto: 'The Stallion & The Flame (Horsehead Nebula)',
+    rating: 5,
+    message: 'I am interested in acquiring an archival ChromaLuxe metal print of the Horsehead & Flame composite for our astronomy research facility lobby. Could you share details regarding maximum print dimensions and resolution?',
+    verified: true,
+  },
   {
     id: 'fb-4',
     name: 'Julian Vance',
@@ -476,3 +497,4 @@ export const initialFeedbackList: ViewerFeedbackItem[] = [
     verified: true,
   },
 ]
+
