@@ -251,7 +251,7 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'portrait',
     featured: false,
     rating: 5,
-    imageUrl: imageUrl: '/photos/puffin.jpg',
+    imageUrl: '/photos/puffin.jpg',
     thumbUrl: '/photos/puffin.jpg',
     exif: {
       camera:  'Nikon Z8',
@@ -279,7 +279,7 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: false,
     rating: 5,
-    imageUrl: imageUrl: '/photos/pelican-3.jpg',
+    imageUrl: '/photos/pelican-3.jpg',
     thumbUrl: '/photos/pelican-3.jpg',
     exif: {
       camera:  'Nikon Z8',
