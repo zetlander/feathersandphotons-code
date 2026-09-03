@@ -434,8 +434,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     thumbUrl: '/photos/NGC7000.jpg',
 
     astronomyExif: {
-         astronomyExif: {
- telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
+    telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
       mount: 'Star Adventurer GTi equatorial mount',
       camera: 'QHY minicam8 mono (-20°C sensor)',
       filters: 'LRGB and  Ha, Oiii, Sii 3nm',
