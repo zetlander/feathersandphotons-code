@@ -80,8 +80,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'portrait',
     featured: true,
     rating: 5,
-    imageUrl: '/photos/barn-swallow.jpg',
-    thumbUrl: '/photos/barn-swallow.jpg',
+    imageUrl: '/photos/barnswallow.jpg',
+    thumbUrl: '/photos/barnswallow.jpg',
     exif: {
       camera: 'Sony α1',
       lens: 'FE 600mm f/4 GM OSS + 1.4x Teleconverter',
