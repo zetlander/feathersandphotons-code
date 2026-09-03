@@ -14,7 +14,7 @@ export function SiteFooter() {
                 <Feather className="w-4 h-4 text-amber-400" />
               </div>
               <span className="font-serif-display font-bold text-slate-100 text-lg tracking-wider">
-                DEEP SKY &amp; BIRDS
+                NEBULAE &amp; BIRDS
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">

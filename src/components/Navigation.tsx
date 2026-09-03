@@ -49,7 +49,7 @@ export function Navigation() {
             </div>
             <div>
               <div className="font-serif-display text-lg font-bold tracking-wider text-slate-100 flex items-center gap-2">
-                <span>DEEP SKY</span>
+                <span>NEBULAE</span>
                 <span className="text-amber-400/90">&amp;</span>
                 <span>BIRDS</span>
               </div>
