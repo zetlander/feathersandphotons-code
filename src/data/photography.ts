@@ -112,19 +112,22 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: '/photos/cormorant.jpg',
     thumbUrl: '/photos/cormorant.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera: 'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
       shutterSpeed: '1/5000s',
       iso: '1600',
       support: 'Handheld with active optical steady shot',
+
+
     },
     fieldNotes: 'none',
-    habitat: 'Rough grassland, marsh borders, and historic agricultural barn lands',
-    wingspan: '85 - 93 cm',
-    tags: ['Cormorant', 'Swallow', 'Dusk', 'Silent Flight', 'Doran'],
+    habitat: 'trees near stream',
+    wingspan: '25 cm',
+    tags: ['Barn Swallow', 'Chalk Stream', 'High Speed', 'River Wildlife', 'Iridescence'],
   },
+
   {
     id: 'green heron',
     title: 'bad hair day',
