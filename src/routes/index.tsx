@@ -110,7 +110,7 @@ function HomePage() {
                 </div>
 
                 <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-slate-100 group-hover:text-amber-200 transition-colors">
-                  Bird &amp; Action
+                  Life of Birds
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
                   High-speed telephoto studies capturing microscopic details
@@ -173,7 +173,7 @@ function HomePage() {
                 </div>
 
                 <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-slate-100 group-hover:text-sky-200 transition-colors">
-                  Dramatic color &amp; in Deep Space
+                  Drama in Deep Space
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
                   Narrowband astrophotography isolating ionized H-alpha, OIII, and SII emissions across thousands of light-years, captured over several hours.
