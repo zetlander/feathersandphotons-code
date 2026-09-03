@@ -3,7 +3,7 @@ export interface BirdPhoto {
   title: string
   species: string
   scientificName: string
-  category: 'raptors' | 'swallows' | 'herons' | 'terns' |'pelicans 
+  category: 'raptors' | 'swallows' | 'herons' | 'terns' |'pelicans '
   location: string
   date: string
   aspect: 'landscape' | 'portrait'
