@@ -3,7 +3,7 @@ export interface BirdPhoto {
   title: string
   species: string
   scientificName: string
-  category: 'raptors' | 'swallows' | 'herons' | 'terns' |'pelicans '
+  category: 'raptors' | 'swallows' | 'herons' | 'terns' |'pelicans '|'cormorants'
   location: string
   date: string
   aspect: 'landscape' | 'portrait'
@@ -32,7 +32,7 @@ export interface DeepSkyImage {
   catalogId: string
   constellation: string
   distance: string
-  category: 'nebulae' | 'galaxies' | 'clusters' | 'remnants'
+  category: 'nebulae' | 'galaxies' | 'clusters' 
   objectType: string
   apparentMagnitude: string
   aspect: 'landscape' | 'portrait'
@@ -101,10 +101,10 @@ export const birdPhotos: BirdPhoto[] = [
   {
     id: 'Cormorant',
     title: 'Blasted!',
-    species: 'Western Barn Owl',
-    scientificName: 'Tyto alba',
-    category: 'raptors',
-    location: 'Norfolk Broads, England',
+    species: 'Cormorant',
+    scientificName: 'Phalacrocoracidae',
+    category: 'water birds',
+    location: 'Bodega Head, Sonoma County',
     date: 'September 24, 2025',
     aspect: 'landscape',
     featured: true,
@@ -131,10 +131,10 @@ export const birdPhotos: BirdPhoto[] = [
   {
     id: 'green heron',
     title: 'bad hair day',
-    species: 'Bald Eagle',
-    scientificName: 'Haliaeetus leucocephalus',
+    species: 'green heron',
+    scientificName: 'Butorides virenscens',
     category: 'herons',
-    location: 'Chilkat Bald Eagle Preserve, Alaska',
+    location: 'Petaluma',
     date: 'November 12, 2025',
     aspect: 'landscape',
     featured: true,
