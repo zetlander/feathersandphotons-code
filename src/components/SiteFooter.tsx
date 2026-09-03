@@ -14,18 +14,18 @@ export function SiteFooter() {
                 <Feather className="w-4 h-4 text-amber-400" />
               </div>
               <span className="font-serif-display font-bold text-slate-100 text-lg tracking-wider">
-                ASTRA &amp; WING
+                DEEP SKY &amp; BIRDS
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              A dual-domain photographic exploration of bird photography and deep space astrophotography.
+              A journey of bird photography and astrophotography.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
               <span className="text-xs px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 font-mono-telemetry text-amber-300/80">
-                Avian: 1/4000s High Speed
+                Birds: 1/5000s High Speed
               </span>
               <span className="text-xs px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 font-mono-telemetry text-sky-300/80">
-                Astro: 32+ Hr Integration
+                Astro: 6+ Hr Integration
               </span>
             </div>
           </div>

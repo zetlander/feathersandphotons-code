@@ -49,9 +49,9 @@ export function Navigation() {
             </div>
             <div>
               <div className="font-serif-display text-lg font-bold tracking-wider text-slate-100 flex items-center gap-2">
-                <span>ASTRA</span>
+                <span>DEEP SKY</span>
                 <span className="text-amber-400/90">&amp;</span>
-                <span>WING</span>
+                <span>BIRDS</span>
               </div>
               <div className="text-[11px] font-mono-telemetry uppercase tracking-widest text-slate-400 flex items-center gap-1.5">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
