@@ -142,7 +142,7 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: '/photos/green-heron.jpg',
     thumbUrl: '/photos/green-heron.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
@@ -170,7 +170,7 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: '/photos/hawk.jpg',
     thumbUrl: '/photos/hawk.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
@@ -198,7 +198,7 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: '/photos/snowy-egret.jpg',
     thumbUrl: '/photos/snowy-egret.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
@@ -226,7 +226,7 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: imageUrl: '/photos/tern-flying.jpg',
     thumbUrl: '/photos/tern-flying.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
@@ -254,7 +254,7 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: imageUrl: '/photos/puffin.jpg',
     thumbUrl: '/photos/puffin.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
@@ -282,7 +282,7 @@ export const birdPhotos: BirdPhoto[] = [
     imageUrl: imageUrl: '/photos/pelican-3.jpg',
     thumbUrl: '/photos/pelican-3.jpg',
     exif: {
-      camera: camera: 'Nikon Z8',
+      camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
       focalLength: '560mm',
       aperture: 'f/6.3',
