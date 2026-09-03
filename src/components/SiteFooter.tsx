@@ -18,7 +18,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              A dual-domain photographic exploration bridging the microsecond precision of avian wildlife photography with the patient multi-hour photon collection of deep space astrophotography.
+              A dual-domain photographic exploration of bird photography and deep space astrophotography.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
               <span className="text-xs px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 font-mono-telemetry text-amber-300/80">
@@ -39,7 +39,7 @@ export function SiteFooter() {
               <li>
                 <Link to="/birds" className="hover:text-amber-300 transition-colors flex items-center gap-2">
                   <Feather className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Avian Wildlife Gallery</span>
+                  <span>Bird Gallery</span>
                 </Link>
               </li>
               <li>

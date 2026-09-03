@@ -16,14 +16,14 @@ export function Navigation() {
     },
     {
       to: '/birds',
-      label: 'Avian Wildlife',
+      label: 'Sonoma County Birds',
       icon: Feather,
       tag: '8 Plates',
       accent: 'text-amber-400',
     },
     {
       to: '/deep-sky',
-      label: 'Deep Sky Cosmos',
+      label: 'Deep Sky Images',
       icon: Telescope,
       tag: '8 Plates',
       accent: 'text-sky-400',
@@ -55,7 +55,7 @@ export function Navigation() {
               </div>
               <div className="text-[11px] font-mono-telemetry uppercase tracking-widest text-slate-400 flex items-center gap-1.5">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                Avian &amp; Deep Sky Archive
+                Bird &amp; Deep Sky Archive
               </div>
             </div>
           </Link>
