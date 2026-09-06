@@ -81,7 +81,7 @@ export const birdPhotos: BirdPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/barnswallow.jpg',
-    thumbUrl: '/photos/barnswallow.jpg',
+    thumbUrl: '/photos/barnswallow-thumb.jpg',
     exif: {
       camera: 'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -110,7 +110,7 @@ export const birdPhotos: BirdPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/cormorant.jpg',
-    thumbUrl: '/photos/cormorant.jpg',
+    thumbUrl: '/photos/cormorant-thumb.jpg',
     exif: {
       camera: 'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -139,8 +139,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: true,
     rating: 5,
-    imageUrl: '/photos/green-heron.jpg',
-    thumbUrl: '/photos/green-heron.jpg',
+    imageUrl: '/photos/greenheron.jpg',
+    thumbUrl: '/photos/greenheron-thumb.jpg',
     exif: {
       camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -152,7 +152,7 @@ export const birdPhotos: BirdPhoto[] = [
 
     },
     fieldNotes: 'none.',
-    habitat: 'Pristine riparian corridors, subpolar estuaries, and coastal old-growth forests',
+    habitat: 'Riparian corridors, estuaries',
     wingspan: '180 - 230 cm',
     tags: ['heron', 'Doran', 'Action' ],
   },
@@ -167,8 +167,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'portrait',
     featured: false,
     rating: 5,
-    imageUrl: '/photos/hawk.jpg',
-    thumbUrl: '/photos/hawk.jpg',
+    imageUrl: '/photos/redtailedhawk.jpg',
+    thumbUrl: '/photos/redtailedhawk-thumb.jpg',
     exif: {
       camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -195,8 +195,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: true,
     rating: 5,
-    imageUrl: '/photos/snowy-egret.jpg',
-    thumbUrl: '/photos/snowy-egret.jpg',
+    imageUrl: '/photos/snowyegret.jpg',
+    thumbUrl: '/photos/snowyegret-thumb.jpg',
     exif: {
       camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -223,8 +223,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: false,
     rating: 4,
-    imageUrl: '/photos/tern-flying.jpg',
-    thumbUrl: '/photos/tern-flying.jpg',
+    imageUrl: '/photos/tern.jpg',
+    thumbUrl: '/photos/tern-thumb.jpg',
     exif: {
       camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -242,7 +242,7 @@ export const birdPhotos: BirdPhoto[] = [
   },
   {
     id: 'Puffin',
-    title: 'Unst Puffin',
+    title: 'Puffin',
     species: 'Atlantic Puffin',
     scientificName: 'Fratercula arctica',
     category: 'waterbirds',
@@ -252,18 +252,18 @@ export const birdPhotos: BirdPhoto[] = [
     featured: false,
     rating: 5,
     imageUrl: '/photos/puffin.jpg',
-    thumbUrl: '/photos/puffin.jpg',
+    thumbUrl: '/photos/puffin-thumb.jpg',
     exif: {
-      camera:  'Nikon Z8',
-      lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
-      focalLength: '560mm',
+      camera:  'Nikon d610',
+      lens: 'Tamron SP150-600mm F5-6.3 Di VC',
+      focalLength: '600',
       aperture: 'f/6.3',
-      shutterSpeed: '1/5000s',
-      iso: '1600',
+      shutterSpeed: '1/100s',
+      iso: '400',
       support: 'Handheld with active optical steady shot',
 
     },
-    fieldNotes: 'Sitting on cliff edge maritime thrift flowers while Atlantic squalls battered the basalt pillars. The puffin returned with a bill full of sand eels, resting inches away seemingly unfazed by human presence.',
+    fieldNotes: 'Sitting on cliff edge maritime thrift flowers ',
     habitat: 'Subarctic ocean cliffs, grassy turf sea stacks, and offshore islands',
     wingspan: '47 - 63 cm',
     tags: ['Puffin', 'Shetland', 'Scotland', 'Seabirds', 'Atlantic'],
@@ -279,8 +279,8 @@ export const birdPhotos: BirdPhoto[] = [
     aspect: 'landscape',
     featured: false,
     rating: 5,
-    imageUrl: '/photos/pelican-3.jpg',
-    thumbUrl: '/photos/pelican-3.jpg',
+    imageUrl: '/photos/pelican-diving.jpg',
+    thumbUrl: '/photos/pelican-diving-thumb.jpg',
     exif: {
       camera:  'Nikon Z8',
       lens: 'Nikon Z 400mm f/4.5, 1.4x Teleconverter',
@@ -312,7 +312,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/m42.jpg',
-    thumbUrl: '/photos/m42.jpg',
+    thumbUrl: '/photos/m42-thumb.jpg',
     astronomyExif: {
       telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
       mount: 'Star Adventurer GTi equatorial mount',
@@ -341,7 +341,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/m31.jpg',
-    thumbUrl: '/photos/m31.jpg',
+    thumbUrl: '/photos/m31-thumb.jpg',
 
     astronomyExif: {
       telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
@@ -371,7 +371,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/ngc2237.jpg',
-    thumbUrl: '/photos/ngc2237.jpg',
+    thumbUrl: '/photos/ngc2237-thumb.jpg',
     astronomyExif: {
       telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
       mount: 'Star Adventurer GTi equatorial mount',
@@ -400,7 +400,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: true,
     rating: 5,
     imageUrl: '/photos/horsehead.jpg',
-    thumbUrl: '/photos/horsehead.jpg',
+    thumbUrl: '/photos/horsehead-thumb.jpg',
 
     astronomyExif: {
  telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
@@ -431,7 +431,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
     featured: false,
     rating: 5,
     imageUrl: '/photos/NGC7000.jpg',
-    thumbUrl: '/photos/NGC7000.jpg',
+    thumbUrl: '/photos/NGC7000-thumb.jpg',
 
     astronomyExif: {
     telescope: 'Redcat 51 wifd telescope. 51mm f/4.9 250mm focal length Petzval APO refractor',
@@ -453,7 +453,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
 export const initialFeedbackList: ViewerFeedbackItem[] = [
   {
     id: 'fb-1',
-    name: 'Dr. Elena Rostova',
+    name: 'Elena Rostova(test only)',
     location: 'Cambridge, MA',
     date: 'February 26, 2026',
     category: 'Deep Sky',
@@ -462,37 +462,6 @@ export const initialFeedbackList: ViewerFeedbackItem[] = [
     message: 'The dynamic range preservation on M42 is masterclass work. Retaining Trapezium resolve while bringing out the whisper-soft outer OIII billows without blowing out the dust lanes is extraordinarily difficult. Phenomenal integration!',
     verified: true,
   },
-  {
-    id: 'fb-2',
-    name: 'Marcus Thorne',
-    location: 'Vancouver, BC',
-    date: 'February 18, 2026',
-    category: 'Birds',
-    targetPhoto: 'Ghost of the Hedgerow (Western Barn Owl)',
-    rating: 5,
-    message: 'The twilight shot of the Barn Owl over Norfolk reeds captures the elusive mood of British fenlands better than almost anything I have seen. At 1/1600s with an f/2.8 prime in failing light, the feather separation is immaculate.',
-    verified: true,
-  },
-  {
-    id: 'fb-3',
-    name: 'Clara Lindqvist',
-    location: 'Stockholm, Sweden',
-    date: 'February 04, 2026',
-    category: 'Print Inquiry',
-    targetPhoto: 'The Stallion & The Flame (Horsehead Nebula)',
-    rating: 5,
-    message: 'I am interested in acquiring an archival ChromaLuxe metal print of the Horsehead & Flame composite for our astronomy research facility lobby. Could you share details regarding maximum print dimensions and resolution?',
-    verified: true,
-  },
-  {
-    id: 'fb-4',
-    name: 'Julian Vance',
-    location: 'Austin, Texas',
-    date: 'January 29, 2026',
-    category: 'General',
-    rating: 5,
-    message: 'What a poetic pairing. High-speed daytime pursuit of fleeting wings contrasted against dozens of hours of patient photon gathering in the dead of night. The technical telemetry cards for both disciplines are so inspiring to fellow photographers.',
-    verified: true,
-  },
+  
 ]
 

@@ -440,7 +440,7 @@ export const deepSkyPhotos: DeepSkyPhoto[] = [
       bortleClass: 'Bortle 4.5 ',
       processingSoftware: 'PixInsight 1.9.4 (BlurXTerminator, NoiseXTerminator, StarXTerminator, GHS) & Adobe Lightroom',
     },
-    fieldNotes: 'none'
+    fieldNotes: 'none',
     celestialCoordinates: 'RA 20h 59m 17s | Dec +44° 31′ 44″',
     targetSeason: 'Summer / Autumn',
     tags: ['Cygnus Wall', 'NGC7000', 'North America', 'Narrowband', 'Milky Way', 'Cosmic Cliffs'],

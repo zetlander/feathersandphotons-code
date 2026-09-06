@@ -55,7 +55,7 @@ export function Navigation() {
               </div>
               <div className="text-[11px] font-mono-telemetry uppercase tracking-widest text-slate-400 flex items-center gap-1.5">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                Bird &amp; Deep Sky Archive
+                Birds &amp; Deep Sky Images
               </div>
             </div>
           </Link>

@@ -1,0 +1,23 @@
+feathersandphotons.com
+From the [Domain management](https://app.netlify.com/projects/thriving-muffin-ea066f/domain-management) page you are currently viewing for your `thriving-muffin-ea066f` project, click the **Add a domain** button and enter `feathersandphotons.com` to begin connecting your new photography site.
+
+**Netlify Configuration**
+
+* Click **Add a domain** right under the Netlify subdomain section on your current screen.
+* Enter `feathersandphotons.com` and proceed. Netlify will ask you to verify ownership; confirm by clicking **Yes, add domain**.
+
+**Porkbun DNS Setup**
+
+* Log in to Porkbun and navigate to the DNS management page for your domain.
+* Delete any default A, ALIAS, or CNAME records Porkbun may have automatically generated during purchase.
+* Add an **A Record** with the Host set to `@` (or leave it blank) and the Answer/Value set to Netlify's load balancer IP: `75.2.60.5`.
+* Add a **CNAME Record** with the Host set to `www` and the Answer/Value pointing directly to your Netlify project: `thriving-muffin-ea066f.netlify.app`.
+
+**SSL Certificate Provisioning**
+
+* Once the DNS records propagate across the internet (which typically takes just a few minutes), return to your Netlify tab.
+* Scroll down to the **HTTPS** section to ensure Netlify has automatically provisioned a free Let's Encrypt SSL certificate, ensuring visitors can securely browse your coastal wildlife and deep-sky image collections. If the certificate provisioning is pending, click **Verify DNS configuration** to force a check.
+
+https://app.netlify.com/projects/thriving-muffin-ea066f/domain-management/setup
+thriving-muffin-ea066f.netlify.app
+https://feathersandphotons.netlify.app/birds

@@ -66,7 +66,7 @@ export function ImageLightbox({
               ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' 
               : 'bg-sky-500/20 text-sky-300 border border-sky-500/30'
           }`}>
-            {isBird ? 'Avian Specimen' : 'Celestial Object'}
+            {isBird ? 'Bird Selection' : 'Deep Sky Selection'}
           </span>
           <span className="text-slate-400 text-xs font-mono-telemetry">
             Plate {currentIndex + 1} of {allPhotos.length}
@@ -226,7 +226,7 @@ export function ImageLightbox({
                 <div className="space-y-2.5">
                   <div className="bg-slate-950/70 p-3 rounded-lg border border-slate-800 space-y-1">
                     <span className="text-[10px] uppercase font-mono-telemetry text-sky-400 tracking-wider">
-                      Astrograph &amp; Mount
+                      Telescope &amp; Mount
                     </span>
                     <div className="text-slate-200 font-medium">{dso.astronomyExif.telescope}</div>
                     <div className="text-slate-400">{dso.astronomyExif.mount}</div>

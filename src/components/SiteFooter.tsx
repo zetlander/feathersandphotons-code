@@ -18,7 +18,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              A journey of bird photography and astrophotography.
+              bird-and astro-photography.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
               <span className="text-xs px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 font-mono-telemetry text-amber-300/80">
@@ -63,7 +63,8 @@ export function SiteFooter() {
               Equipment &amp; Standards
             </h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Ethical wildlife protocol: No baiting, no artificial playback, strictly remote hides. Astrophotography: True narrowband emission spectrum calibration (SHO / LRGB).
+              Ethical wildlife protocol: No baiting, no artificial playback
+		Astrophotography: Narrowband emission spectrum imaging (SHO / LRGB).
             </p>
             <div className="pt-2">
               <Link
