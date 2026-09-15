@@ -14,11 +14,11 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Astra & Wing | Fine Art Avian & Deep Sky Astrophotography',
+        title: 'Bird & Deep Sky photography',
       },
       {
         name: 'description',
-        content: 'Photographic archive exploring the high-speed split-second flight of avian wildlife and the deep time photon collection of deep sky objects.',
+        content: 'Photographs exploring bird and the deep sky objects.',
       },
     ],
     links: [
