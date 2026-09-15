@@ -18,7 +18,7 @@ export const Route = createRootRoute({
       },
       {
         name: 'description',
-        content: 'Photographs exploring bird and the deep sky objects.',
+        content: 'Photographs exploring birds and space',
       },
     ],
     links: [
