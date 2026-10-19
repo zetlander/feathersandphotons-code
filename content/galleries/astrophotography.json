@@ -59,6 +59,30 @@
     {
       "image": "/photos/astrophotography/orion-nebula-m42-and-running-man-nebula.jpg",
       "caption": "Orion Nebula (M42) and Running Man Nebula"
+    },
+    {
+      "image": "/photos/astrophotography/cygnus-wall-ngc-7000.jpg",
+      "caption": "Cygnus Wall, North America Nebula (NGC 7000)"
+    },
+    {
+      "image": "/photos/astrophotography/pelican-nebula-ic-5070.jpg",
+      "caption": "Pelican Nebula (IC 5070)"
+    },
+    {
+      "image": "/photos/astrophotography/wizard-nebula-ngc-7380.jpg",
+      "caption": "Wizard Nebula (NGC 7380)"
+    },
+    {
+      "image": "/photos/astrophotography/eastern-veil-caldwell-33.jpg",
+      "caption": "Eastern Veil Nebula (Caldwell 33)"
+    },
+    {
+      "image": "/photos/astrophotography/ngc-2264-region.jpg",
+      "caption": "NGC 2264 region, Monoceros"
+    },
+    {
+      "image": "/photos/astrophotography/hercules-cluster-m13.jpg",
+      "caption": "Great Hercules Cluster (M13)"
     }
   ]
 }
