@@ -1,0 +1,134 @@
+# Settings for the editing page at feathersandphotons.com/admin
+# Saving in the editor commits to GitHub, and Netlify rebuilds the site in about a minute.
+
+backend:
+  name: github
+  repo: zetlander/feathersandphotons-code
+  branch: main
+  base_url: https://api.netlify.com
+  commit_messages:
+    create: "Add {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "Upload photo “{{path}}”"
+    deleteMedia: "Delete photo “{{path}}”"
+
+site_url: https://feathersandphotons.com
+display_url: https://feathersandphotons.com
+logo_url: /favicon.svg
+
+# Where uploaded photos are stored in the repository, and their address on the site
+media_folder: static/photos/uploads
+public_folder: /photos/uploads
+
+collections:
+  - name: journal
+    label: "Journal"
+    label_singular: "journal entry"
+    description: "Your journal. Newest entries appear first on the site."
+    folder: content/journal
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: json-frontmatter
+    sortable_fields: [date, title]
+    summary: "{{date | date('MMM D, YYYY')}} · {{title}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "MMMM D, YYYY", time_format: false }
+      - { label: "Short summary (optional; shown in the list of entries)", name: summary, widget: text, required: false }
+      - { label: "Hide from the site (draft)", name: draft, widget: boolean, default: false, required: false }
+      - { label: "Text", name: body, widget: markdown, buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list], editor_components: [image] }
+
+  - name: galleries
+    label: "Photo galleries"
+    label_singular: "gallery"
+    description: "Add, remove, reorder and caption the photos in each gallery."
+    editor: { preview: false }
+    files:
+      - name: landscapes
+        label: "Landscapes"
+        file: content/galleries/landscapes.json
+        format: json
+        fields: &gallery_fields
+        - { label: "Gallery name", name: title, widget: string }
+        - { label: "Position in menu (1 = first)", name: order, widget: number, value_type: int, min: 1 }
+        - label: "Thumbnail size"
+          name: thumbnail_size
+          widget: select
+          default: large
+          options:
+            - { label: "Large (2 across)", value: large }
+            - { label: "Small (3 across)", value: small }
+        - label: "Cover photo on the home page"
+          name: cover
+          widget: object
+          collapsed: true
+          fields:
+            - { label: "Photo", name: image, widget: image, choose_url: false }
+            - { label: "Caption", name: caption, widget: string, required: false }
+            - label: "Which part of the photo to keep when it's cropped"
+              name: focus
+              widget: select
+              default: center
+              options:
+                - { label: "Middle", value: "center" }
+                - { label: "Top", value: "center top" }
+                - { label: "Upper third", value: "center 35%" }
+                - { label: "Lower third", value: "center 65%" }
+                - { label: "Bottom", value: "center bottom" }
+        - label: "Photos"
+          name: photos
+          widget: list
+          label_singular: "photo"
+          add_to_top: true
+          collapsed: true
+          summary: "{{fields.caption}}"
+          hint: "New photos go to the top. Drag the ⋮⋮ handle to change the order."
+          fields:
+            - { label: "Photo", name: image, widget: image, choose_url: false }
+            - { label: "Caption", name: caption, widget: string, required: false }
+      - { name: birds, label: "Birds", file: content/galleries/birds.json, format: json, fields: *gallery_fields }
+      - { name: astrophotography, label: "Astrophotography", file: content/galleries/astrophotography.json, format: json, fields: *gallery_fields }
+      - { name: people, label: "People", file: content/galleries/people.json, format: json, fields: *gallery_fields }
+
+  - name: pages
+    label: "Home page & About"
+    editor: { preview: false }
+    files:
+      - name: site
+        label: "Home page & About"
+        file: content/site.json
+        format: json
+        fields:
+          - label: "Big photo at the top of the home page"
+            name: featured
+            widget: object
+            fields:
+              - { label: "Photo", name: image, widget: image, choose_url: false }
+              - { label: "Caption", name: caption, widget: string, required: false }
+              - label: "Which part of the photo to keep when it's cropped"
+                name: focus
+                widget: select
+                default: center
+                required: false
+                options:
+                  - { label: "Middle", value: "center" }
+                  - { label: "Top", value: "center top" }
+                  - { label: "Upper third", value: "center 35%" }
+                  - { label: "Lower third", value: "center 65%" }
+                  - { label: "Bottom", value: "center bottom" }
+          - label: "About"
+            name: about
+            widget: object
+            fields:
+              - { label: "Name", name: name, widget: string }
+              - { label: "About you (one or two sentences)", name: intro, widget: text }
+              - { label: "Portrait", name: portrait, widget: image, choose_url: false, required: false }
+              - label: "Gear"
+                name: gear
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Heading (e.g. Birds gear)", name: label, widget: string }
+                  - { label: "Details", name: text, widget: text }

@@ -1,0 +1,32 @@
+{
+  "title": "People",
+  "order": 4,
+  "thumbnail_size": "large",
+  "cover": {
+    "image": "/photos/people/an-early-violin-lesson.jpg",
+    "caption": "An early violin lesson",
+    "focus": "center 35%"
+  },
+  "photos": [
+    {
+      "image": "/photos/people/an-early-violin-lesson.jpg",
+      "caption": "An early violin lesson"
+    },
+    {
+      "image": "/photos/people/bundled-up-on-a-foggy-beach.jpg",
+      "caption": "Bundled up on a foggy beach"
+    },
+    {
+      "image": "/photos/people/family-by-the-front-door.jpg",
+      "caption": "Family by the front door"
+    },
+    {
+      "image": "/photos/people/on-a-fiord-cruise.jpg",
+      "caption": "On a fiord cruise"
+    },
+    {
+      "image": "/photos/people/below-the-glacier.jpg",
+      "caption": "Below the glacier"
+    }
+  ]
+}
