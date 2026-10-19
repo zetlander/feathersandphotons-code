@@ -1,7 +1,29 @@
 [build]
-  command = "vite build"
-  publish = "dist/client"
-[dev]
-  command = "npm run dev"
-  targetPort = 3000
-  port = 8888
+  command = "node build.mjs"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Old addresses from the previous site
+[[redirects]]
+  from = "/deep-sky"
+  to = "/astrophotography/"
+  status = 301
+[[redirects]]
+  from = "/feedback"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

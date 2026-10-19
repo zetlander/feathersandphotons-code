@@ -1,0 +1,21 @@
+{
+  "featured": {
+    "image": "/photos/site/home-featured.jpg",
+    "caption": "Birdwalk Coastal Access Trail, Bodega Bay, CA"
+  },
+  "about": {
+    "name": "K. H. Williamson",
+    "intro": "Retired geophysicist. Interests include bird photography, astrophotography, tennis and music.",
+    "portrait": "/photos/site/portrait.jpg",
+    "gear": [
+      {
+        "label": "Birds gear",
+        "text": "Nikon Z8; Nikon Z 400mm f/4.5 with Z TC-1.4x teleconverter"
+      },
+      {
+        "label": "Astro gear",
+        "text": "Redcat 51 WIFD (51mm, f/4.9, 250mm); QHY miniCAM8 mono cooled camera; LRGB and 3nm Ha, OIII, SII filters; Star Adventurer GTi mount; ZWO ASI120MM Mini on a ZWO 30mm f/5 guide scope; MeLE Quieter 4 mini PC running NINA, PHD2, Stellarium and GSServer"
+      }
+    ]
+  }
+}

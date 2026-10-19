@@ -1,0 +1,152 @@
+{
+  "title": "Birds",
+  "order": 2,
+  "thumbnail_size": "small",
+  "cover": {
+    "image": "/photos/birds/willet-doran-beach.jpg",
+    "caption": "Willet at Doran Beach, California",
+    "focus": "center top"
+  },
+  "photos": [
+    {
+      "image": "/photos/birds/elegant-tern-with-a-fish.jpg",
+      "caption": "Elegant tern with a fish"
+    },
+    {
+      "image": "/photos/birds/surf-scoters-riding-a-wave.jpg",
+      "caption": "Surf scoters riding a wave"
+    },
+    {
+      "image": "/photos/birds/barn-swallow-open-wide.jpg",
+      "caption": "Barn swallow: Open Wide!"
+    },
+    {
+      "image": "/photos/birds/turkey-vulture-drying-its-wings.jpg",
+      "caption": "Turkey vulture drying its wings"
+    },
+    {
+      "image": "/photos/birds/willet-doran-beach.jpg",
+      "caption": "Willet, Doran Beach"
+    },
+    {
+      "image": "/photos/birds/marbled-godwit-in-the-surf.jpg",
+      "caption": "Marbled godwit in the surf"
+    },
+    {
+      "image": "/photos/birds/brown-pelican-diving.jpg",
+      "caption": "Brown pelican diving"
+    },
+    {
+      "image": "/photos/birds/red-shouldered-hawk-taking-off.jpg",
+      "caption": "Red-shouldered hawk taking off"
+    },
+    {
+      "image": "/photos/birds/red-shouldered-hawk-with-a-crayfish.jpg",
+      "caption": "Red-shouldered hawk with a crayfish"
+    },
+    {
+      "image": "/photos/birds/red-shouldered-hawk-portrait.jpg",
+      "caption": "Red-shouldered hawk, portrait"
+    },
+    {
+      "image": "/photos/birds/killdeer-stretching-its-wings.jpg",
+      "caption": "Killdeer stretching its wings"
+    },
+    {
+      "image": "/photos/birds/black-necked-stilts-mating.jpg",
+      "caption": "Black-necked stilts mating"
+    },
+    {
+      "image": "/photos/birds/red-shouldered-hawk-giving-the-finger.jpg",
+      "caption": "Red-shouldered hawk giving the finger"
+    },
+    {
+      "image": "/photos/birds/green-heron-in-flight.jpg",
+      "caption": "Green heron in flight"
+    },
+    {
+      "image": "/photos/birds/sandhill-cranes-taking-off.jpg",
+      "caption": "Sandhill cranes taking off"
+    },
+    {
+      "image": "/photos/birds/sandhill-cranes-dancing.jpg",
+      "caption": "Sandhill cranes dancing"
+    },
+    {
+      "image": "/photos/birds/northern-shovelers-drake-taking-off.jpg",
+      "caption": "Northern shovelers, drake taking off"
+    },
+    {
+      "image": "/photos/birds/snowy-egret-portrait.jpg",
+      "caption": "Snowy egret, portrait"
+    },
+    {
+      "image": "/photos/birds/snowy-egret-tossing-a-fish.jpg",
+      "caption": "Snowy egret tossing a fish"
+    },
+    {
+      "image": "/photos/birds/snowy-egret-with-its-catch.jpg",
+      "caption": "Snowy egret with its catch"
+    },
+    {
+      "image": "/photos/birds/young-double-crested-cormorant-portrait.jpg",
+      "caption": "Young double-crested cormorant, portrait"
+    },
+    {
+      "image": "/photos/birds/elegant-tern-lifting-off-with-a-fish.jpg",
+      "caption": "Elegant tern lifting off with a fish"
+    },
+    {
+      "image": "/photos/birds/willet-in-flight.jpg",
+      "caption": "Willet in flight"
+    },
+    {
+      "image": "/photos/birds/snowy-egret-in-an-excited-state.jpg",
+      "caption": "Snowy egret in an excited state"
+    },
+    {
+      "image": "/photos/birds/cormorant-being-blasted-by-the-wind.jpg",
+      "caption": "Cormorant being blasted by the wind"
+    },
+    {
+      "image": "/photos/birds/common-murre-coming-in-to-land.jpg",
+      "caption": "Common murre coming in to land"
+    },
+    {
+      "image": "/photos/birds/american-white-pelicans-taking-off.jpg",
+      "caption": "American white pelicans taking off"
+    },
+    {
+      "image": "/photos/birds/brandts-cormorant-bringing-in-nest-material.jpg",
+      "caption": "Brandt’s cormorant bringing in nest material"
+    },
+    {
+      "image": "/photos/birds/atlantic-puffin-shetland.jpg",
+      "caption": "Atlantic puffin, Shetland Isles, Scotland"
+    },
+    {
+      "image": "/photos/birds/green-heron-bad-hair-day.jpg",
+      "caption": "Green heron having a bad hair day, Petaluma"
+    },
+    {
+      "image": "/photos/birds/hawkeye-red-shouldered-hawk.jpg",
+      "caption": "Hawkeye: red-shouldered hawk, Shollenberger Park, Petaluma"
+    },
+    {
+      "image": "/photos/birds/grebe-with-a-frog.jpg",
+      "caption": "Grebe with a frog"
+    },
+    {
+      "image": "/photos/birds/tern-ready-to-pounce.jpg",
+      "caption": "Tern ready to pounce, Doran Beach"
+    },
+    {
+      "image": "/photos/birds/tern-diving.jpg",
+      "caption": "Tern diving"
+    },
+    {
+      "image": "/photos/birds/tern-twisting-with-a-fish.jpg",
+      "caption": "Tern twisting in flight with a fish"
+    }
+  ]
+}

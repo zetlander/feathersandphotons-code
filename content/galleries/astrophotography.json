@@ -1,0 +1,88 @@
+{
+  "title": "Astrophotography",
+  "order": 3,
+  "thumbnail_size": "large",
+  "cover": {
+    "image": "/photos/astrophotography/heart-nebula-ic-1805.jpg",
+    "caption": "Heart Nebula",
+    "focus": "center"
+  },
+  "photos": [
+    {
+      "image": "/photos/astrophotography/heart-nebula-ic-1805.jpg",
+      "caption": "Heart Nebula (IC 1805)"
+    },
+    {
+      "image": "/photos/astrophotography/lion-nebula-sh2-132-sho.jpg",
+      "caption": "Lion Nebula (Sh2-132), SHO"
+    },
+    {
+      "image": "/photos/astrophotography/rosette-nebula-ngc-2237-sho.jpg",
+      "caption": "Rosette Nebula (NGC 2237), SHO"
+    },
+    {
+      "image": "/photos/astrophotography/squid-nebula-ou4-in-the-flying-bat-sh2-129-hoo.jpg",
+      "caption": "Squid Nebula (Ou4) in the Flying Bat (Sh2-129), HOO"
+    },
+    {
+      "image": "/photos/astrophotography/lobster-claw-sh2-157-and-bubble-nebula-ngc-7635-sho.jpg",
+      "caption": "Lobster Claw (Sh2-157) and Bubble Nebula (NGC 7635), SHO"
+    },
+    {
+      "image": "/photos/astrophotography/elephants-trunk-in-ic-1396-sho.jpg",
+      "caption": "Elephant’s Trunk in IC 1396, SHO"
+    },
+    {
+      "image": "/photos/astrophotography/horsehead-b33-and-flame-nebula-ngc-2024.jpg",
+      "caption": "Horsehead (B33) and Flame Nebula (NGC 2024)"
+    },
+    {
+      "image": "/photos/astrophotography/andromeda-galaxy-m31-with-m32.jpg",
+      "caption": "Andromeda Galaxy (M31) with M32"
+    },
+    {
+      "image": "/photos/astrophotography/tulip-nebula-sh2-101-region-cygnus.jpg",
+      "caption": "Tulip Nebula (Sh2-101) region, Cygnus"
+    },
+    {
+      "image": "/photos/astrophotography/veil-nebula-pickerings-triangle-region.jpg",
+      "caption": "Veil Nebula, Pickering’s Triangle region"
+    },
+    {
+      "image": "/photos/astrophotography/sadr-region-ic-1318-cygnus-hoo.jpg",
+      "caption": "Sadr region (IC 1318), Cygnus, HOO"
+    },
+    {
+      "image": "/photos/astrophotography/pleiades-m45.jpg",
+      "caption": "Pleiades (M45)"
+    },
+    {
+      "image": "/photos/astrophotography/orion-nebula-m42-and-running-man-nebula.jpg",
+      "caption": "Orion Nebula (M42) and Running Man Nebula"
+    },
+    {
+      "image": "/photos/astrophotography/cygnus-wall-ngc-7000.jpg",
+      "caption": "Cygnus Wall, North America Nebula (NGC 7000)"
+    },
+    {
+      "image": "/photos/astrophotography/pelican-nebula-ic-5070.jpg",
+      "caption": "Pelican Nebula (IC 5070)"
+    },
+    {
+      "image": "/photos/astrophotography/wizard-nebula-ngc-7380.jpg",
+      "caption": "Wizard Nebula (NGC 7380)"
+    },
+    {
+      "image": "/photos/astrophotography/eastern-veil-caldwell-33.jpg",
+      "caption": "Eastern Veil Nebula (Caldwell 33)"
+    },
+    {
+      "image": "/photos/astrophotography/ngc-2264-region.jpg",
+      "caption": "NGC 2264 region, Monoceros"
+    },
+    {
+      "image": "/photos/astrophotography/hercules-cluster-m13.jpg",
+      "caption": "Great Hercules Cluster (M13)"
+    }
+  ]
+}

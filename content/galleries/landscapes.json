@@ -1,0 +1,32 @@
+{
+  "title": "Landscapes",
+  "order": 1,
+  "thumbnail_size": "large",
+  "cover": {
+    "image": "/photos/landscapes/mesquite-flat-dunes-death-valley.jpg",
+    "caption": "Mesquite Flat dunes, Death Valley",
+    "focus": "center"
+  },
+  "photos": [
+    {
+      "image": "/photos/landscapes/mesquite-flat-dunes-death-valley.jpg",
+      "caption": "Mesquite Flat dunes, Death Valley"
+    },
+    {
+      "image": "/photos/landscapes/sunrise-at-woodbridge-ecological-reserve.jpg",
+      "caption": "Sunrise at Woodbridge Ecological Reserve"
+    },
+    {
+      "image": "/photos/landscapes/sea-arch-at-bodega-head-california.jpg",
+      "caption": "Sea arch at Bodega Head, California"
+    },
+    {
+      "image": "/photos/landscapes/boiling-mud-pool-frozen-mid-splash.jpg",
+      "caption": "Boiling mud pool, frozen mid-splash"
+    },
+    {
+      "image": "/photos/landscapes/sunset-over-lake-wanaka-new-zealand.jpg",
+      "caption": "Sunset over Lake Wanaka, New Zealand"
+    }
+  ]
+}
