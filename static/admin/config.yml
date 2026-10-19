@@ -90,7 +90,6 @@ collections:
             - { label: "Caption", name: caption, widget: string, required: false }
       - { name: birds, label: "Birds", file: content/galleries/birds.json, format: json, fields: *gallery_fields }
       - { name: astrophotography, label: "Astrophotography", file: content/galleries/astrophotography.json, format: json, fields: *gallery_fields }
-      - { name: people, label: "People", file: content/galleries/people.json, format: json, fields: *gallery_fields }
 
   - name: pages
     label: "Home page & About"
