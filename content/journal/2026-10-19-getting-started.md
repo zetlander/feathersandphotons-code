@@ -14,11 +14,15 @@ Bird and Landscape photos are processed in Adobe Lightroom and RAW files are con
 
 Getting up to speed on Astrophotography not so straightforward.  Required getting familiar with a collection of hardware and software: 
 
-### **Astro Hardware**
+## **Astrophotography Equipment**
+
+### Hardware
 
 **Redcat 51 wifd telescope**. 51mm f/4.9 250mm focal length Petzval APO refractor. 2.39 arcseconds per pixel with minicam8. Horizontal FOV: 2.55°, Vertical FOV: 1.44°, Diagonal FOV: 2.93°. 
 
 **ZWO EAF auto focuser** 
+
+**ZWO 30mm f/5 guide scope, ZWO ASI120MM Camera**, 5.16 arc secs/pixel ,Search region 15 pixels 
 
 **QHY minicam8 mono astro camera**, with cooled sensor and deep sky filter set . LRGB and  Ha, Oiii, Sii 3nm SHO filters. Sensor: Sony IMX585 (BSI, 1/1.2-inch)  Resolution: 3856 x 2180 (8.4 MP)  Pixel Size: 2.9μm x 2.9μm. Format: 1/1.2".  Sensor Width: 11.2 mm Height: 6.3 mm Diagonal: 12.84 mm
 
@@ -28,9 +32,7 @@ Getting up to speed on Astrophotography not so straightforward.  Required gettin
 
 **Jackery explorer 300 plus portable power station**
 
-
-
-### Astro Software
+### Software
 
 * **Green Swamp Server** (GSS) controls Star Adventurer GTi equatorial mount
 * **Stellarium** helps plan the night's imaging and provides a database of stars and deep sky objects
