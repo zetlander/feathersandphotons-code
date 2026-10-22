@@ -9,6 +9,38 @@
   },
   "photos": [
     {
+      "image": "/photos/uploads/oporto.jpg",
+      "caption": "Duoro River, Porto, Portugal"
+    },
+    {
+      "image": "/photos/uploads/fox-glacier.jpg",
+      "caption": "Fox Glacier, South Island, New Zealand. From a helicopter."
+    },
+    {
+      "image": "/photos/uploads/white-mountains-ca.jpg",
+      "caption": "Bristlecone Pine at White Mountains, CA"
+    },
+    {
+      "image": "/photos/uploads/utah-17-of-90-.jpg",
+      "caption": "Mobius Arch framing Mount Whitney"
+    },
+    {
+      "image": "/photos/uploads/utah-54-of-90-.jpg",
+      "caption": "Hoodoos at Bryce Canyon National Park, Utah"
+    },
+    {
+      "image": "/photos/uploads/utah-51-of-90-.jpg",
+      "caption": "The Watchman at sunset, Zion National Park, Utah"
+    },
+    {
+      "image": "/photos/uploads/yosemite.jpg",
+      "caption": "Half Dome from Glacier Point"
+    },
+    {
+      "image": "/photos/uploads/half-dome.jpg",
+      "caption": "Half Dome at sunset."
+    },
+    {
       "image": "/photos/landscapes/mesquite-flat-dunes-death-valley.jpg",
       "caption": "Mesquite Flat dunes, Death Valley"
     },
@@ -23,10 +55,6 @@
     {
       "image": "/photos/landscapes/boiling-mud-pool-frozen-mid-splash.jpg",
       "caption": "Boiling mud pool, frozen mid-splash"
-    },
-    {
-      "image": "/photos/landscapes/sunset-over-lake-wanaka-new-zealand.jpg",
-      "caption": "Sunset over Lake Wanaka, New Zealand"
     }
   ]
 }
