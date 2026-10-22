@@ -1,13 +1,25 @@
 {
   "title": "Birds",
   "order": 2,
-  "thumbnail_size": "small",
+  "thumbnail_size": "large",
   "cover": {
     "image": "/photos/birds/willet-doran-beach.jpg",
     "caption": "Willet at Doran Beach, California",
     "focus": "center top"
   },
   "photos": [
+    {
+      "image": "/photos/uploads/cinnamon-teal-and-admirer.jpg",
+      "caption": "Cinnamon Teal and admirer"
+    },
+    {
+      "image": "/photos/uploads/oystercatcher-and-vultures-2.jpg",
+      "caption": "Oystercatcher closeup"
+    },
+    {
+      "image": "/photos/uploads/khw_2598.jpg",
+      "caption": "Pelicans with rhythm"
+    },
     {
       "image": "/photos/birds/elegant-tern-with-a-fish.jpg",
       "caption": "Elegant tern with a fish"
