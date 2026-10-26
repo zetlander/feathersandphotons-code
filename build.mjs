@@ -472,6 +472,21 @@ if (!NETLIFY && !LOCAL) {
     '',
   ].join('\n'))
 
+  // Cloudflare can't host a single file over 25 MB. Visitors see the resized copies made below
+  // (made from the originals in static/), so leave out any original that's too big to host.
+  const LIMIT = 25 * 1024 * 1024
+  const dropBig = (dir) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const f = path.join(dir, e.name)
+      if (e.isDirectory()) dropBig(f)
+      else if (fs.statSync(f).size > LIMIT) {
+        fs.rmSync(f)
+        console.warn(`Left out the full-size original (over 25 MB): ${path.relative(OUT, f)}`)
+      }
+    }
+  }
+  dropBig(OUT)
+
   // Make the resized copies of each photo.
   const { default: sharp } = await import('sharp')
   const jobs = [...resizes]
