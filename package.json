@@ -5,5 +5,11 @@
   "scripts": {
     "build": "node build.mjs",
     "preview": "LOCAL=1 node build.mjs && cd _site && python3 -m http.server 8080"
+  },
+  "dependencies": {
+    "sharp": "^0.35.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

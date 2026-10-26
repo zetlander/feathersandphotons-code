@@ -2,7 +2,8 @@
 // No outside packages: content comes from content/ (edited through /admin),
 // static files (photos, styles, the editor) are copied from static/.
 //
-//   node build.mjs          build for Netlify (photos resized by Netlify Image CDN)
+//   node build.mjs          build for Cloudflare (resized copies of each photo made here, in _site/img/)
+//   (on Netlify)            Netlify sets NETLIFY=true; photos are resized by Netlify Image CDN as before
 //   LOCAL=1 node build.mjs  build for a local preview (full-size photos)
 
 import fs from 'node:fs'
@@ -13,6 +14,7 @@ const OUT = path.join(ROOT, '_site')
 const STATIC = path.join(ROOT, 'static')
 const CONTENT = path.join(ROOT, 'content')
 const LOCAL = !!process.env.LOCAL
+const NETLIFY = process.env.NETLIFY === 'true'
 const YEAR = new Date().getFullYear()
 
 // ---------- helpers ----------
@@ -32,12 +34,18 @@ function write(rel, html) {
   fs.writeFileSync(file, html)
 }
 
-// Image URL, resized by Netlify Image CDN on the live site.
+// Image URL. On Netlify, resized by Netlify Image CDN. Elsewhere (Cloudflare), a resized copy
+// is made during the build: /photos/birds/heron.jpg at 1000px → /img/photos/birds/heron-1000.jpg
+const resizes = new Map() // output file → { src, width }
 function img(src, width) {
   if (!src) return ''
   const p = encodeURI(src.startsWith('/') ? src : '/' + src)
   if (LOCAL || !width) return p
-  return `/.netlify/images?url=${encodeURIComponent(p)}&w=${width}&q=80`
+  if (NETLIFY) return `/.netlify/images?url=${encodeURIComponent(p)}&w=${width}&q=80`
+  const clean = decodeURI(p)
+  const out = `/img${clean.replace(/\.[^./]+$/, '')}-${width}.jpg`
+  resizes.set(out, { src: clean, width })
+  return encodeURI(out)
 }
 const srcset = (src, widths) => widths.map((w) => `${img(src, w)} ${w}w`).join(', ')
 
@@ -276,6 +284,31 @@ ${body}
 `
 }
 
+// ---------- feedback email (below About) ----------
+// The address is never written into the page: it is put together only when someone
+// clicks, so robots that collect email addresses from websites don't find it.
+// Shown on the Cloudflare site only, because the address works once the domain is on Cloudflare.
+function feedbackSection() {
+  const email = (site.feedback_email || '').trim()
+  const m = email.match(/^([^@\s]+)@([^@\s]+\.[^@\s]+)$/)
+  if (NETLIFY || !m) return ''
+  return `
+
+<section id="feedback" class="wrap section feedback" aria-labelledby="feedback-h">
+  <h2 id="feedback-h" class="eyebrow">Feedback</h2>
+  <p>Comments on a photo, or the site? I'd be glad to hear from you.</p>
+  <a class="feedback-button" href="#feedback" data-u="${esc(m[1].split('').reverse().join(''))}" data-d="${esc(m[2].split('').reverse().join(''))}">Send feedback by email</a>
+  <script>
+  document.querySelector('.feedback-button').addEventListener('click', (e) => {
+    e.preventDefault()
+    const r = (x) => x.split('').reverse().join('')
+    const b = e.currentTarget
+    location.href = 'mailto:' + r(b.dataset.u) + '@' + r(b.dataset.d) + '?subject=' + encodeURIComponent('Feedback on Feathers & Photons')
+  })
+  </script>
+</section>`
+}
+
 // ---------- load content ----------
 
 const site = readJSON(path.join(CONTENT, 'site.json'))
@@ -327,7 +360,7 @@ const plural = (n) => `${n} photo${n === 1 ? '' : 's'}`
       ${(a.gear || []).map((g) => `<p><span class="label">${esc(g.label)}</span> · ${esc(g.text)}</p>`).join('\n      ')}
     </div>
   </div>
-</section>`
+</section>${feedbackSection()}`
   write('index.html', layout({ body, image: f.image }))
 }
 
@@ -416,5 +449,54 @@ write('404.html', layout({
   title: 'Not found',
   body: `<div class="wrap-narrow journal"><h1>Not found</h1><p class="empty">That page isn’t here. Try the <a href="/">galleries</a> or the <a href="/journal/">journal</a>.</p></div>`,
 }))
+
+// ---------- Cloudflare extras ----------
+// Netlify reads netlify.toml; Cloudflare reads _redirects and _headers from the site folder.
+
+if (!NETLIFY && !LOCAL) {
+  write('_redirects', [
+    '# Old addresses from the previous site (same as netlify.toml)',
+    '/deep-sky /astrophotography/ 301',
+    '/feedback / 301',
+    '/contact / 301',
+    '/people/* / 301',
+    '',
+  ].join('\n'))
+  write('_headers', [
+    '/assets/*',
+    '  Cache-Control: public, max-age=3600',
+    '/img/*',
+    '  Cache-Control: public, max-age=86400',
+    '/admin/*',
+    '  X-Robots-Tag: noindex',
+    '',
+  ].join('\n'))
+
+  // The editor at /admin signs in with GitHub through Netlify. Name the Netlify site
+  // explicitly, so sign-in also works on the Cloudflare test address and after the move.
+  const cfg = path.join(OUT, 'admin', 'config.yml')
+  fs.writeFileSync(cfg, fs.readFileSync(cfg, 'utf8').replace(
+    '  base_url: https://api.netlify.com\n',
+    '  base_url: https://api.netlify.com\n  site_domain: feathersandphotons.netlify.app\n'))
+
+  // Make the resized copies of each photo.
+  const { default: sharp } = await import('sharp')
+  const jobs = [...resizes]
+  let made = 0
+  const worker = async () => {
+    while (jobs.length) {
+      const [out, { src, width }] = jobs.shift()
+      const from = path.join(STATIC, src)
+      const to = path.join(OUT, out)
+      if (!fs.existsSync(from)) { console.warn(`Missing photo: ${src}`); continue }
+      fs.mkdirSync(path.dirname(to), { recursive: true })
+      await sharp(from).rotate().resize({ width, withoutEnlargement: true })
+        .jpeg({ quality: 80, mozjpeg: true, progressive: true }).toFile(to)
+      made++
+    }
+  }
+  await Promise.all(Array.from({ length: 4 }, worker))
+  console.log(`Made ${made} resized photos`)
+}
 
 console.log(`Built ${galleries.length} galleries (${galleries.reduce((n, g) => n + g.photos.length, 0)} photos) and ${journal.length} journal entries into _site/`)

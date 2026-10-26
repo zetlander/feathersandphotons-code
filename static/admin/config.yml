@@ -131,3 +131,4 @@ collections:
                 fields:
                   - { label: "Heading (e.g. Birds gear)", name: label, widget: string }
                   - { label: "Details", name: text, widget: text }
+          - { label: "Feedback email address (shown as a button below About)", name: feedback_email, widget: string, required: false, hint: "Leave empty to hide the feedback button." }

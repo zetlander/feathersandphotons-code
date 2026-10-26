@@ -1,0 +1,11 @@
+// Settings for hosting the site on Cloudflare.
+// Cloudflare builds the site from GitHub (npm install && npm run build), then runs `npx wrangler deploy`.
+{
+  "name": "feathersandphotons",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
