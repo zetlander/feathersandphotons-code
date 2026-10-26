@@ -9,8 +9,20 @@
   },
   "photos": [
     {
-      "image": "/photos/uploads/oporto.jpg",
-      "caption": "Duoro River, Porto, Portugal"
+      "image": "/photos/uploads/droplets.jpg",
+      "caption": "Droplets"
+    },
+    {
+      "image": "/photos/uploads/bodega-head.jpg",
+      "caption": "Bodega Head"
+    },
+    {
+      "image": "/photos/uploads/mono-lake-at-sunset.jpg",
+      "caption": "Mono Lake at sunset"
+    },
+    {
+      "image": "/photos/uploads/mammoth.jpg",
+      "caption": "Ruby Lake, California"
     },
     {
       "image": "/photos/uploads/fox-glacier.jpg",
