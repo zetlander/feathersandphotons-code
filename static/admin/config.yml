@@ -1,11 +1,13 @@
 # Settings for the editing page at feathersandphotons.com/admin
-# Saving in the editor commits to GitHub, and Netlify rebuilds the site in about a minute.
+# Saving in the editor commits to GitHub, and Cloudflare rebuilds the site in a minute or two.
+# Sign-in with GitHub is handled by the site itself (/auth and /callback, see worker/auth.js).
 
 backend:
   name: github
   repo: zetlander/feathersandphotons-code
   branch: main
-  base_url: https://api.netlify.com
+  base_url: https://feathersandphotons.com
+  auth_endpoint: auth
   commit_messages:
     create: "Add {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"

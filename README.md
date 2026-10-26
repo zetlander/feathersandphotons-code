@@ -31,9 +31,11 @@ build command `npm install && npm run build`, deploy command `npx wrangler deplo
 Settings are in `wrangler.jsonc`. Old-address redirects and cache headers are written by
 `build.mjs` (`_redirects`, `_headers`); `netlify.toml` holds the same rules for Netlify.
 
-The editor at `/admin` still signs in with GitHub through the Netlify site
-(feathersandphotons.netlify.app), so keep that Netlify site even after the move.
-Its builds can be stopped.
+The editor at `/admin` signs in with GitHub through the site itself: `worker/auth.js` handles
+`/auth` and `/callback`, using the GitHub OAuth App "Feathers & Photons editor"
+(callback URL `https://feathersandphotons.com/callback`). Its Client ID and Client Secret are
+stored in Cloudflare as the secrets `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`
+(feathersandphotons → Settings → Variables and Secrets). Netlify is no longer needed.
 
 The feedback button below About uses `feedback_email` in `content/site.json`
 (editable under **Home page & About**). It appears on the Cloudflare site only.

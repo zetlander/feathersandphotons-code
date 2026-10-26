@@ -1,11 +1,15 @@
 // Settings for hosting the site on Cloudflare.
 // Cloudflare builds the site from GitHub (npm install && npm run build), then runs `npx wrangler deploy`.
+// The site is served straight from _site/; only /auth and /callback (the editor's GitHub sign-in)
+// run the small script in worker/auth.js.
 {
   "name": "feathersandphotons",
+  "main": "worker/auth.js",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./_site",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": ["/auth", "/callback"]
   }
 }

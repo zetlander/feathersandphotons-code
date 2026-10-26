@@ -472,13 +472,6 @@ if (!NETLIFY && !LOCAL) {
     '',
   ].join('\n'))
 
-  // The editor at /admin signs in with GitHub through Netlify. Name the Netlify site
-  // explicitly, so sign-in also works on the Cloudflare test address and after the move.
-  const cfg = path.join(OUT, 'admin', 'config.yml')
-  fs.writeFileSync(cfg, fs.readFileSync(cfg, 'utf8').replace(
-    '  base_url: https://api.netlify.com\n',
-    '  base_url: https://api.netlify.com\n  site_domain: feathersandphotons.netlify.app\n'))
-
   // Make the resized copies of each photo.
   const { default: sharp } = await import('sharp')
   const jobs = [...resizes]
