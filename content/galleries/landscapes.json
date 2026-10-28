@@ -9,8 +9,20 @@
   },
   "photos": [
     {
-      "image": "/photos/uploads/droplets.jpg",
-      "caption": "Droplets"
+      "image": "/photos/uploads/portfolio-1-6-of-12-.jpg",
+      "caption": "Sol Duc Falls, Olympic NP, Oregon"
+    },
+    {
+      "image": "/photos/uploads/utah-9-of-90-.jpg",
+      "caption": "Tufa love, at Mono Lakes, California"
+    },
+    {
+      "image": "/photos/uploads/utah-45-of-90-.jpg",
+      "caption": "Watchman Peak and Juniper, at Zion NP, Utah"
+    },
+    {
+      "image": "/photos/uploads/_dsc9109-351.jpg",
+      "caption": "Ruby Lake, California"
     },
     {
       "image": "/photos/uploads/mono-lake-at-sunset.jpg",
@@ -59,6 +71,10 @@
     {
       "image": "/photos/landscapes/boiling-mud-pool-frozen-mid-splash.jpg",
       "caption": "Boiling mud pool, frozen mid-splash"
+    },
+    {
+      "image": "/photos/uploads/droplets.jpg",
+      "caption": "Droplets"
     }
   ]
 }
