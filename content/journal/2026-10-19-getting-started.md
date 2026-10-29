@@ -8,7 +8,7 @@
 
 The Domain Name featherandphotons.com was acquired from Porkbun. Their service is transparent, simple and cheap. I asked Gemini for suggestions on a domain name and this one popped up. 
 
-This website was built using Claude Opus 5.5 to build a site hosted on Netlify.  The process of "vibe coding" with Claude was straightforward and mistakes were easily corrected.  My first attempt at building a site with Gemini Pro was less satisfying.  I should have taken Chad's advice from the outset!
+This website was built using Claude Opus 5.5 to build a site hosted on Netlify.  The process of "vibe coding" with Claude was straightforward and mistakes were easily corrected.  My first attempt at building a site with Gemini Pro was less satisfying.  I should have taken Chad's advice from the outset! While adding content to the site I ran into limitations with Netlify's free tier, so I ported the site to Cloudflare where I haven't encountered problems.
 
 Bird and Landscape photos are processed in Adobe Lightroom and RAW files are converted to jpeg for posting. Pretty straightforward.
 
