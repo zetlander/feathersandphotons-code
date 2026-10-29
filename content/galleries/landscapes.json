@@ -9,6 +9,22 @@
   },
   "photos": [
     {
+      "image": "/photos/uploads/portfolio-1-3-of-12-.jpg",
+      "caption": "Mesquite dunes, Death Valley, California"
+    },
+    {
+      "image": "/photos/uploads/portugal-32-of-75-.jpg",
+      "caption": "Obidos, Portugal"
+    },
+    {
+      "image": "/photos/uploads/new-zealand-48-of-61-.jpg",
+      "caption": "Mount Cook, New Zealand"
+    },
+    {
+      "image": "/photos/uploads/new-zealand-13-of-61-.jpg",
+      "caption": "Wai-O-Tapu hot springs, Rotorua, New Zealand"
+    },
+    {
       "image": "/photos/uploads/portfolio-1-6-of-12-.jpg",
       "caption": "Sol Duc Falls, Olympic NP, Oregon"
     },
