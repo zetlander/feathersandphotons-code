@@ -1,9 +1,8 @@
 // Builds the Feathers & Photons site into _site/.
-// No outside packages: content comes from content/ (edited through /admin),
+// Content comes from content/ (edited through /admin),
 // static files (photos, styles, the editor) are copied from static/.
 //
 //   node build.mjs          build for Cloudflare (resized copies of each photo made here, in _site/img/)
-//   (on Netlify)            Netlify sets NETLIFY=true; photos are resized by Netlify Image CDN as before
 //   LOCAL=1 node build.mjs  build for a local preview (full-size photos)
 
 import fs from 'node:fs'
@@ -14,7 +13,6 @@ const OUT = path.join(ROOT, '_site')
 const STATIC = path.join(ROOT, 'static')
 const CONTENT = path.join(ROOT, 'content')
 const LOCAL = !!process.env.LOCAL
-const NETLIFY = process.env.NETLIFY === 'true'
 const YEAR = new Date().getFullYear()
 
 // ---------- helpers ----------
@@ -34,14 +32,12 @@ function write(rel, html) {
   fs.writeFileSync(file, html)
 }
 
-// Image URL. On Netlify, resized by Netlify Image CDN. Elsewhere (Cloudflare), a resized copy
-// is made during the build: /photos/birds/heron.jpg at 1000px → /img/photos/birds/heron-1000.jpg
+// Image URL. A resized copy is made during the build: /photos/birds/heron.jpg at 1000px → /img/photos/birds/heron-1000.jpg
 const resizes = new Map() // output file → { src, width }
 function img(src, width) {
   if (!src) return ''
   const p = encodeURI(src.startsWith('/') ? src : '/' + src)
   if (LOCAL || !width) return p
-  if (NETLIFY) return `/.netlify/images?url=${encodeURIComponent(p)}&w=${width}&q=80`
   const clean = decodeURI(p)
   const out = `/img${clean.replace(/\.[^./]+$/, '')}-${width}.jpg`
   resizes.set(out, { src: clean, width })
@@ -287,11 +283,10 @@ ${body}
 // ---------- feedback email (below About) ----------
 // The address is never written into the page: it is put together only when someone
 // clicks, so robots that collect email addresses from websites don't find it.
-// Shown on the Cloudflare site only, because the address works once the domain is on Cloudflare.
 function feedbackSection() {
   const email = (site.feedback_email || '').trim()
   const m = email.match(/^([^@\s]+)@([^@\s]+\.[^@\s]+)$/)
-  if (NETLIFY || !m) return ''
+  if (!m) return ''
   return `
 
 <section id="feedback" class="wrap section feedback" aria-labelledby="feedback-h">
@@ -451,11 +446,11 @@ write('404.html', layout({
 }))
 
 // ---------- Cloudflare extras ----------
-// Netlify reads netlify.toml; Cloudflare reads _redirects and _headers from the site folder.
+// Cloudflare reads _redirects and _headers from the site folder.
 
-if (!NETLIFY && !LOCAL) {
+if (!LOCAL) {
   write('_redirects', [
-    '# Old addresses from the previous site (same as netlify.toml)',
+    '# Old addresses from the previous site',
     '/deep-sky /astrophotography/ 301',
     '/feedback / 301',
     '/contact / 301',
