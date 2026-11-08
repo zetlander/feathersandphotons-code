@@ -83,6 +83,14 @@
     {
       "image": "/photos/astrophotography/hercules-cluster-m13.jpg",
       "caption": "Great Hercules Cluster (M13)"
+    },
+    {
+      "image": "/photos/uploads/ngc7023a.jpg",
+      "caption": "Iris Nebula (NGC7023)"
+    },
+    {
+      "image": "/photos/uploads/ngc869.jpg",
+      "caption": "Double cluster in Perseus (NGC869, NGC884)"
     }
   ]
 }
