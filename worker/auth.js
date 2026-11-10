@@ -7,14 +7,12 @@
 // Settings → Variables and Secrets → GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET
 // (from the GitHub OAuth App "Feathers & Photons editor").
 
-// Pages allowed to receive the sign-in token.
+// The only pages allowed to receive the sign-in token. Exact addresses only: a pattern
+// such as "feathersandphotons.*.workers.dev" would also match sites other people can create.
 const ALLOWED_ORIGINS = [
   'https://feathersandphotons.com',
   'https://www.feathersandphotons.com',
 ]
-const isAllowed = (origin) =>
-  ALLOWED_ORIGINS.includes(origin) ||
-  /^https:\/\/feathersandphotons\.[a-z0-9-]+\.workers\.dev$/.test(origin)
 
 const SCOPES = ['repo', 'public_repo']
 
@@ -77,7 +75,7 @@ function result(status, content) {
 <script>
 (function () {
   var allowed = ${allowed};
-  function ok(o) { return allowed.indexOf(o) !== -1 || /^https:\\/\\/feathersandphotons\\.[a-z0-9-]+\\.workers\\.dev$/.test(o) }
+  function ok(o) { return allowed.indexOf(o) !== -1 }
   function receive(e) {
     if (!ok(e.origin)) return;
     window.removeEventListener('message', receive);
