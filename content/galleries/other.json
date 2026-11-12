@@ -3,9 +3,18 @@
   "order": 4,
   "thumbnail_size": "large",
   "cover": {
-    "image": "",
+    "image": "/photos/uploads/droplets.jpg",
     "caption": "",
     "focus": "center"
   },
-  "photos": []
+  "photos": [
+    {
+      "image": "/photos/uploads/family-2-of-2-.jpg",
+      "caption": "Uncle Jimmy casting peats"
+    },
+    {
+      "image": "/photos/uploads/surfer11nov26-2.jpg",
+      "caption": "Surfer at Doran Beach, CA"
+    }
+  ]
 }
