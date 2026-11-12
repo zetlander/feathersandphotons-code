@@ -312,7 +312,8 @@ const galleries = fs.readdirSync(path.join(CONTENT, 'galleries')).filter((f) => 
   const slug = f.replace(/\.json$/, '')
   const photos = (g.photos || []).filter((p) => p && p.image)
   return { ...g, slug, url: `/${slug}/`, photos }
-}).sort((a, b) => (a.order ?? 99) - (b.order ?? 99))
+}).filter((g) => g.photos.length > 0) // a gallery with no photos yet stays off the site until its first photo is added
+  .sort((a, b) => (a.order ?? 99) - (b.order ?? 99))
 const journal = loadJournal()
 
 // ---------- build ----------

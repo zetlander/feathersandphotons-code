@@ -1,0 +1,11 @@
+{
+  "title": "Other",
+  "order": 4,
+  "thumbnail_size": "large",
+  "cover": {
+    "image": "",
+    "caption": "",
+    "focus": "center"
+  },
+  "photos": []
+}
