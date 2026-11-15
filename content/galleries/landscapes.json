@@ -9,12 +9,16 @@
   },
   "photos": [
     {
-      "image": "/photos/uploads/death-valley-racetrack.jpg",
-      "caption": "Racetrack, Death Valley.  Mystery force moves boulders on playa."
+      "image": "/photos/landscapes/mesquite-flat-dunes-death-valley.jpg",
+      "caption": "Mesquite Flat dunes, Death Valley"
     },
     {
       "image": "/photos/uploads/portfolio-1-3-of-12-.jpg",
       "caption": "Mesquite dunes, Death Valley, California"
+    },
+    {
+      "image": "/photos/uploads/death-valley-racetrack.jpg",
+      "caption": "Racetrack, Death Valley.  Mystery force moves boulders on playa."
     },
     {
       "image": "/photos/uploads/portugal-32-of-75-.jpg",
@@ -39,10 +43,6 @@
     {
       "image": "/photos/uploads/utah-45-of-90-.jpg",
       "caption": "Watchman Peak and Juniper, at Zion NP, Utah"
-    },
-    {
-      "image": "/photos/uploads/_dsc9109-351.jpg",
-      "caption": "Ruby Lake, California"
     },
     {
       "image": "/photos/uploads/mono-lake-at-sunset.jpg",
@@ -77,16 +77,8 @@
       "caption": "Half Dome at sunset."
     },
     {
-      "image": "/photos/landscapes/mesquite-flat-dunes-death-valley.jpg",
-      "caption": "Mesquite Flat dunes, Death Valley"
-    },
-    {
       "image": "/photos/landscapes/sunrise-at-woodbridge-ecological-reserve.jpg",
       "caption": "Sunrise at Woodbridge Ecological Reserve"
-    },
-    {
-      "image": "/photos/landscapes/sea-arch-at-bodega-head-california.jpg",
-      "caption": "Sea arch at Bodega Head, California"
     },
     {
       "image": "/photos/landscapes/boiling-mud-pool-frozen-mid-splash.jpg",
