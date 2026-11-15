@@ -9,20 +9,20 @@
   },
   "photos": [
     {
+      "image": "/photos/uploads/surfer11nov26-2.jpg",
+      "caption": "Surfer at Doran Beach, CA"
+    },
+    {
       "image": "/photos/uploads/afar-stuck-land-rover.jpg",
       "caption": "Stuck in the sand, Afar, Ethiopia 1973"
     },
     {
       "image": "/photos/uploads/kamchatka.jpg",
-      "caption": "Fieldwork in the Soviet Union (Kamchatka)"
+      "caption": "Fieldwork in the Kamchatka, Russia 1990"
     },
     {
       "image": "/photos/uploads/family-2-of-2-.jpg",
-      "caption": "Uncle Jimmy casting peats"
-    },
-    {
-      "image": "/photos/uploads/surfer11nov26-2.jpg",
-      "caption": "Surfer at Doran Beach, CA"
+      "caption": "Uncle Jimmy Williamson casting peats"
     }
   ]
 }
