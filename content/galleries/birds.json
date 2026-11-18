@@ -9,6 +9,10 @@
   },
   "photos": [
     {
+      "image": "/photos/uploads/california-towhee.jpg",
+      "caption": "California Towhee"
+    },
+    {
       "image": "/photos/uploads/puffin-walking.jpg",
       "caption": "Puffin on the march"
     },
