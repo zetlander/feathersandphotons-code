@@ -9,10 +9,6 @@
   },
   "photos": [
     {
-      "image": "/photos/uploads/california-towhee.jpg",
-      "caption": "California Towhee"
-    },
-    {
       "image": "/photos/uploads/puffin-walking.jpg",
       "caption": "Puffin on the march"
     },
@@ -111,6 +107,10 @@
     {
       "image": "/photos/birds/brown-pelican-diving.jpg",
       "caption": "Brown pelican diving"
+    },
+    {
+      "image": "/photos/uploads/california-towhee.jpg",
+      "caption": "California Towhee"
     },
     {
       "image": "/photos/birds/red-shouldered-hawk-taking-off.jpg",
