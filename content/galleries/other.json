@@ -9,6 +9,10 @@
   },
   "photos": [
     {
+      "image": "/photos/uploads/humpback-whale.jpg",
+      "caption": "Humpback whale feeding, off Doran Beach"
+    },
+    {
       "image": "/photos/uploads/surfer11nov26-2.jpg",
       "caption": "Surfer at Doran Beach, CA"
     },
